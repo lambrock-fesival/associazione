@@ -16,7 +16,8 @@ export default function Wave() {
 	};
 
 	const draw = (p5) => {
-		p5.background(255);
+		p5.clear();
+		// p5.background(255);
 		p5.noFill();
 		let offset1 = start;
 

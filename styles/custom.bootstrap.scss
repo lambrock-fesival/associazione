@@ -1,3 +1,7 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
@@ -5,8 +9,20 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-// $body-bg: #faf8f6;
+$body-bg: #fff;
+$link-color: #ff0000;
 $font-family-sans-serif: 'Gothic A1', sans-serif;
+
+// $theme-colors: (
+//   "primary":			$primary,
+//   "secondary":		$secondary,
+//   "success":			$success,
+//   "info":					$info,
+//   "warning":			$warning,
+//   "danger":				$danger,
+//   "light":				$light,
+//   "dark":					$dark,
+// );
 
 // 3. Include remainder of required Bootstrap stylesheets
 // @import "../node_modules/bootstrap/scss/variables";
