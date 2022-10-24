@@ -19,6 +19,7 @@ export default function Wave() {
 		p5.clear();
 		// p5.background(255);
 		p5.noFill();
+		p5.strokeWeight(2)
 		let offset1 = start;
 
 		p5.beginShape();
