@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-import PageTemplate from "../components/Templates/PageTemplate";
+import PageTemplate from "./components/Templates/PageTemplate";
 import { getPageMD } from "../utils/load-md";
 
 export default function Home({ data }) {
