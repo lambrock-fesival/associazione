@@ -1,17 +1,13 @@
-/* module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: '/*',
-        destination: 'https://api.webtest.net/*',
-      },
-    ]
-  },
-}; */
-
-// base path
 module.exports = {
   basePath: '/associazione',
+  exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+    return {
+      '/': { page: '/' },
+      '/storia': { page: '/storia' },
+      '/contatti': { page: '/contatti' },
+      '/galleria': { page: '/galleria' },
+    }
+  },
   images: {
     unoptimized: true,
   },
