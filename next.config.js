@@ -8,8 +8,5 @@ module.exports = {
       '/galleria': { page: '/galleria' },
     }
   },
-  images: {
-    unoptimized: true,
-  },
 }
 
