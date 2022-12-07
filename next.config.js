@@ -12,4 +12,8 @@
 // base path
 module.exports = {
   basePath: '/associazione',
+  images: {
+    unoptimized: true,
+  },
 }
+
