@@ -1,4 +1,4 @@
-# Galleria
+# Storia 1
 
 *Lorem ipsum* dolor sit amet, consectetur adipiscing elit. In porttitor turpis ut nulla tempor ultricies id at mi. Phasellus a elit urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eu iaculis ante, nec faucibus ex. Donec nisi felis, condimentum ac leo ut, facilisis auctor nulla. Nulla eu lacus ut leo sollicitudin eleifend. Praesent finibus sed eros sed rutrum. Etiam sagittis ultricies laoreet. Vestibulum eu nisi quam.
 

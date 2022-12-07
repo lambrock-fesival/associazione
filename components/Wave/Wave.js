@@ -5,26 +5,26 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 	ssr: false,
 });
 
-const inc = 0.005;
+const inc = 0.05;
 let start = 0;
 
 export default function Wave() {
 	const setup = (p5, canvasParentRef) => {
 		// use parent to render the canvas in this ref
 		// (without that p5 will render the canvas outside of your component)
-		p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef);
+		p5.createCanvas(p5.windowWidth - 100, p5.windowHeight).parent(canvasParentRef);
 	};
 
 	const draw = (p5) => {
 		p5.clear();
 		// p5.background(255);
 		p5.noFill();
-		p5.strokeWeight(2)
+		p5.strokeWeight(1)
 		let offset1 = start;
 
 		p5.beginShape();
 		for (let x = 0; x < p5.width; x += 1) {
-			const delta = 100;
+			const delta = 500;
 			const s = p5.map(p5.sin(offset1), -1, 1, p5.height - delta, delta);
 			const n = p5.map(p5.noise(offset1), 0, 1, delta, -delta);
 			const y = s + n;
@@ -42,7 +42,7 @@ export default function Wave() {
 
 	return (
 		<>
-			<Sketch style={{ position: "absolute", zIndex: -1 }} setup={setup} draw={draw} windowResized={windowResized} />
+			<Sketch style={{ position: "relative", zIndex: -1 }} setup={setup} draw={draw} windowResized={windowResized} />
 		</>
 	);
 }

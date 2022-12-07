@@ -1,12 +1,15 @@
 import ReactMarkdown from "react-markdown";
-import PageTemplate from "./components/Templates/PageTemplate";
+import HomeTemplate from "../components/Templates/HomeTemplate";
 import { getPageMD } from "../utils/load-md";
 
 export default function Home({ data }) {
 	return (
-		<PageTemplate>
-			<ReactMarkdown>{data.content}</ReactMarkdown>
-		</PageTemplate>
+		<>
+			<HomeTemplate>
+				<ReactMarkdown>{data.content}</ReactMarkdown>
+			</HomeTemplate>
+
+		</>
 	);
 }
 
