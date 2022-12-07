@@ -4,7 +4,7 @@
     "dev": "start http://localhost:3000/associazione && next dev --port 3000",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next start"
+    "export": "next build && next export"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
